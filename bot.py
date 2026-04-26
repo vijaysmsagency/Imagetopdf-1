@@ -10,7 +10,7 @@ from telegram.ext import (
     ContextTypes,
     filters
 )
-TOKEN = "8703013141:AAE3_d-pjw5FHZksNHk37Z2yVZdRHEedAGM"
+
 # Constants for Conversation states
 PHOTO, CONVERT = range(2)
 
@@ -81,7 +81,7 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 if __name__ == '__main__':
     # Replace 'YOUR_TOKEN_HERE' with your actual BotFather token
-    app = ApplicationBuilder().token("YOUR_TOKEN_HERE").build()
+    app = ApplicationBuilder().token("8703013141:AAE3_d-pjw5FHZksNHk37Z2yVZdRHEedAGM").build()
 
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler('start', start)],
